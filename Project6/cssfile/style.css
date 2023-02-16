@@ -1,0 +1,112 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+
+.box-1{
+  background-color: #f70e0e;
+  margin-top: 20px;
+  display: none;
+  
+}
+
+.box-2{
+  background-color: #adf70e;
+  display: none;
+  margin-top: 20px;
+  
+
+}
+
+.box-3{
+  background-color: #f7c80e;
+  display: none;
+  margin-top: 20px;
+
+}
+
+.box-4{
+  background-color: #0ec1f7;
+  display: none;
+  margin-top: 20px;
+  
+}
+
+
+
+/* for big screen TV */
+@media (min-width:1440px) {
+  .box-1{
+    
+    background-color: #205d03;
+    font-size: 20px;
+    height: 1440px;
+    width: 1440px;
+    display: block;
+    border-radius: 50px;
+    text-align: center;
+  }
+  .box-1::after{
+    content: "Frame-1 For BIG SCREEN E.G TV =1440px";
+    color: aliceblue;
+  }
+}
+
+
+/* For laptop screen */
+
+@media (min-width:1024px){
+  .box-2{
+    background: #916005;
+    text-align: center;
+    font-size: 20px;
+    height: 1024px;
+    width: 1024px;
+    display: block;
+    border-radius: 50px;
+    
+  }
+  .box-2::after{
+    content: "Frame-2 For laptop screen= 1024px";
+    color: rgb(246, 242, 242);
+  }
+}
+
+/* For Tablet screen */
+@media (min-width:768px){
+  .box-3{
+    background: #0ce5c8;
+    text-align: center;
+    font-size: 20px;
+    height: 768px;
+    width: 768px;
+    display: block;
+    border-radius: 50px;
+    
+  }
+  .box-3::after{
+    content: "Frame-4 For Tablet screen= 1024px";
+    color: rgb(246, 242, 242);
+  }
+}
+
+ /* For Tablet screen  */
+@media (min-width:425px){
+  .box-4{
+    background: #350bf1;
+    text-align: center;
+    font-size: 20px;
+    height: 425px;
+    width: 425px;
+    display: block;
+    border-radius: 50px;
+    
+  }
+  .box-4::after{
+    content: "Frame-4 For mobile screen= 768px";
+    color: rgb(246, 242, 242);
+  }
+}
+
